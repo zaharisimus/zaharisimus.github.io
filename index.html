@@ -1,1 +1,165 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>дрифт</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+	<div class="container">
+	<div class="shapka" >
+    </div>
+    <div>
+     <center> 
+  <script type="text/javascript"> 
+  var sliderwidth="940px"//Specify the slider's width (in pixels) 
+  var sliderheight="200px"//Specify the slider's height 
+  var slidespeed=2//Specify the slider's slide speed (larger is faster 1-10) 
+  slidebgcolor="#000000"//configure background color: 
+  var leftrightslide=new Array()//Specify the slider's images 
+  var finalslide='' 
+  leftrightslide[0] ='<img src="foto/468_5.jpg" width=300 height=200 border="0">' 
+  leftrightslide[1] ='<img src="foto/1346205826_fdlvresults-2.jpg" width=300 height=200 border="0">'
+  leftrightslide[2] ='<img src="foto/1390204678_bmwdrift-1200x675.jpg" width=300 height=200 border="0">'
+  leftrightslide[4] ='<img src="foto/braking-drift.jpg" width=300 height=200 border="0">'  
+  leftrightslide[5] ='<img src="foto/Clutch-Kick-drift.jpg" width=300 height=200 border="0">'  
+  leftrightslide[7] ='<img src="foto/dirt-drop-drift-technique.jpg" width=300 height=200 border="0">' 
+  leftrightslide[8] ='<img src="foto/drift-history.jpg" width=300 height=200 border="0">' 
+  leftrightslide[9] ='<img src="foto/Feint-Drift.jpg" width=300 height=200 border="0">' 
+  leftrightslide[10] ='<img src="foto/images.jpg" width=300 height=200 border="0">' 
+  leftrightslide[11] ='<img src="foto/jump-drift.jpg" width=300 height=200 border="0">' 
+  leftrightslide[12] ='<img src="foto/Kansei-Drift.jpg" width=300 height=200 border="0">' 
+  leftrightslide[13] ='<img src="foto/lift-off-drift.jpg" width=300 height=200 border="0">' 
+  leftrightslide[14] ='<img src="foto/long-slide-drift.jpg" width=300 height=200 border="0">' 
+  leftrightslide[15] ='<img src="foto/lpfIBzU4kPE.jpg" width=300 height=200 border="0">' 
+  leftrightslide[16] ='<img src="foto/power-over-drift.jpg" width=300 height=200 border="0">' 
+  leftrightslide[17] ='<img src="foto/shift-lock-drift.jpg" width=300 height=200 border="0">' 
+  leftrightslide[18] ='<img src="foto/Swaying-Drift.jpg" width=300 height=200 border="0">'
+  leftrightslide[19] ='<img src="foto/tehniki-drifta.jpg" width=300 height=200 border="0">' 
+  leftrightslide[20] ='<img src="foto/XRm-syuQWqk.jpg" width=300 height=200 border="0">' 
+  leftrightslide[21] ='<img src="foto/фон.jpg" width=300 height=200 border="0">'
+  leftrightslide[22] ='<img src="foto/images2.jpg" width=300 height=200 border="0">'  
+  leftrightslide[23] ='<img src="foto/images (1).jpg" width=300 height=200 border="0">'
+  leftrightslide[24] ='<img src="foto/images (2).jpg" width=300 height=200 border="0">'
+  leftrightslide[25] ='<img src="foto/images (3).jpg" width=300 height=200 border="0">'
+  leftrightslide[26] ='<img src="foto/images (4).jpg" width=300 height=200 border="0">'
+  leftrightslide[27] ='<img src="foto/images (5).jpg" width=300 height=200 border="0">'
+  leftrightslide[28] ='<img src="foto/images (6).jpg" width=300 height=200 border="0">'
+  leftrightslide[29] ='<img src="foto/images (7).jpg" width=300 height=200 border="0">'
+  leftrightslide[30] ='<img src="foto/images (8).jpg" width=300 height=200 border="0">'
+  leftrightslide[31] ='<img src="foto/images (9).jpg" width=300 height=200 border="0">'
+  leftrightslide[32] ='<img src="foto/images (10).jpg" width=300 height=200 border="0">'
+  leftrightslide[33] ='<img src="foto/images (11).jpg" width=300 height=200 border="0">'
+  leftrightslide[34] ='<img src="foto/images (12).jpg" width=300 height=200 border="0">'   
+  //Specify gap between each image (use HTML): 
+  var imagegap=" "  
+//Specify pixels gap between each slideshow rotation (use integer): 
+  var slideshowgap=2 
+   
+////NO NEED TO EDIT BELOW THIS LINE////////////  
+var copyspeed=slidespeed 
+  leftrightslide='<nobr>'+leftrightslide.join(imagegap)+'</nobr>' 
+  var iedom=document.all||document.getElementById 
+  if (iedom) 
+  document.write('<span id="temp" style="visibility:hidden;position:absolute;top:-100px;left:-9000px">'+leftrightslide+'</span>') 
+  var actualwidth='' 
+  var cross_slide, ns_slide  
+function fillup(){ 
+  if (iedom){ 
+  cross_slide=document.getElementById? document.getElementById("test2") : document.all.test2 
+  cross_slide2=document.getElementById? document.getElementById("test3") : document.all.test3 
+  cross_slide.innerHTML=cross_slide2.innerHTML=leftrightslide 
+  actualwidth=document.all? cross_slide.offsetWidth : document.getElementById("temp").offsetWidth 
+  cross_slide2.style.left=actualwidth+slideshowgap+"px" 
+  } 
+  else if (document.layers){ 
+  ns_slide=document.ns_slidemenu.document.ns_slidemenu2 
+  ns_slide2=document.ns_slidemenu.document.ns_slidemenu3 
+  ns_slide.document.write(leftrightslide) 
+  ns_slide.document.close() 
+  actualwidth=ns_slide.document.width 
+  ns_slide2.left=actualwidth+slideshowgap 
+  ns_slide2.document.write(leftrightslide) 
+  ns_slide2.document.close() 
+  } 
+  lefttime=setInterval("slideleft()",30) 
+  } 
+  window.onload=fillup  
+function slideleft(){ 
+  if (iedom){ 
+  if (parseInt(cross_slide.style.left)>(actualwidth*(-1)+8)) 
+  cross_slide.style.left=parseInt(cross_slide.style.left)-copyspeed+"px" 
+  else 
+  cross_slide.style.left=parseInt(cross_slide2.style.left)+actualwidth+slideshowgap+"px" 
+   
+  if (parseInt(cross_slide2.style.left)>(actualwidth*(-1)+8)) 
+  cross_slide2.style.left=parseInt(cross_slide2.style.left)-copyspeed+"px" 
+  else 
+  cross_slide2.style.left=parseInt(cross_slide.style.left)+actualwidth+slideshowgap+"px" 
+  } 
+  else if (document.layers){ 
+  if (ns_slide.left>(actualwidth*(-1)+8)) ns_slide.left-=copyspeed 
+  else ns_slide.left=ns_slide2.left+actualwidth+slideshowgap 
+  if (ns_slide2.left>(actualwidth*(-1)+8)) ns_slide2.left-=copyspeed 
+  else ns_slide2.left=ns_slide.left+actualwidth+slideshowgap 
+  } 
+  }  
+if (iedom||document.layers){ 
+  with (document){ 
+  document.write('<table border="0" cellspacing="0" cellpadding="0"><td>') 
+  if (iedom){ 
+  write('<div style="position:relative;width:'+sliderwidth+';height:'+sliderheight+';overflow:hidden">') 
+  write('<div style="position:absolute;width:'+sliderwidth+';height:'+sliderheight+';background-color:'+slidebgcolor+'" onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed">') 
+  write('<div id="test2" style="position:absolute;left:0px;top:0px"></div>') 
+  write('<div id="test3" style="position:absolute;left:-1000px;top:0px"></div>') 
+  write('</div></div>') 
+  } 
+  else if (document.layers){ 
+  write('<ilayer width='+sliderwidth+' height='+sliderheight+' name="ns_slidemenu" bgColor='+slidebgcolor+'>') 
+  write('<layer name="ns_slidemenu2" left=0 top=0 onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed"></layer>') 
+  write('<layer name="ns_slidemenu3" left=0 top=0 onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed"></layer>') 
+  write('</ilayer>') 
+  } 
+  document.write('</td></table>') 
+  } 
+  } 
+  </script> 
+  </center>
+    </div>
+<ul class="menu">
+		<li><a href=""> главная</a></li>
+		<li><a href="novosty.html">новости</a></li>
+		<li><a href="meropriyatia.html">мероприятия</a></li>
+		<li><a href="texnikadrift.html">техники дрифта</a></li>
+		
+	
+  		</ul> 
+  		<div class="text">
+	<h2>Происхождение</h2>
+	<hr>
+	<p>Дрифт, как техника вождения, используемая пилотами гоночной серии Grand Prix (не путать с D1GP) впервые описан ещё в начале 1930-х годов. По крайней мере, сохранились кадры рекламы гоночного автомобиля Auto Union Type-D, в которых водитель бросал автомобиль в контролируемый занос для прохождения одного из поворотов трассы.</p>
+	<h2>Японская адаптация</h2>
+	<hr>
+	<img src="foto/468_5.jpg" class="historydrift">
+	<hr>
+	<p>Современный дрифт взял своё начало в Японии, тоже как техника прохождения поворотов, используемая в гоночной серии Japan Touring Car Championship. Легенда мотогонок, Kunimitsu Takahashi, был самым выдающимся создателем различных техник дрифта в 1970-х годах. Он приближался к апексу (см. дрифт-словарь) на максимально возможной сеорости, затем бросал автомобиль в контролируемый занос, тем самым сохраняя высокую скорость на выходе из поворота. Благодаря такому способу им было выйграно множество чемпионатов, и вместе с этим огромное количество фанатов, которым очень нравилось смотреть на дымящиеся покрышки :)</p>
+	<p>Новые виды покрышек с усовершенствованным типом корда, появившиеся в 60-х годах, позволяли за счёт лучшего сцепления держать большие углы во время заноса. Вскоре такую технику прохождения поворотов у профессиональных гонщиков позаимствовали и уличные гонщики.</p>
+	<p>Keiichi Tsuchiya (также известный сейчас как "Король дрифта/Drift King/Dori King") очень заинтересовался дрифтом и стал практиковать свои навыки на горных трассах Японии и быстро завоевал уважение среди уличных гонщиков.В 1987 году несколько популярных автомобильных журналов и тюнинг-мастерских объединились для того, чтобы снять короткометражный фильм о навыках Keiichi Tsuchiya, который получил название Pluspy и стал хитом, который вдохновил на занятия дрифтом многих знаменитых участников D1GP.</p>
+	<p>В 1988 году основатель популярного журнала Option, а так же его главный редактор - Daijiro Inada, оказал огромную помощь в организации первого в мире официального чемпионата по дрифту - D1 Grand Prix. </p>
+	<h2>Появление дрифта на Западе</h2>
+	<hr>
+	<p>Самое первое появление дрифта за пределами Японии было в 1993 году, на  трассе Willow Springs Raceway (Уиллоу Спрингс, штат Калифорния) при поддержке Японского автомобильного журнала и компании Option.</p>
+	<p>Inada (основатель гоночной серии D1GP), Kenji Okazaki (участник чемпионата по драг-рейсингу NHRA, в классе Funny Car) и Keiichi Tsuchiya (провёл демонстрационные заезды на Nissan 180sx, специально купленном для этого мероприятия и привезённом специально из Японии) - были судьями этого чемпионата. После этого дрифт стал одним из самых популярных видов автоспорта в Северной Америке, Австралии и Европе.</p>
+	
+	</div>
+	</div> 
+	</div>
+
+<div class="footer">
+	<img src="foto/footer_logo.png">
+</div>
+
+</div>
+</body>
+</html>
